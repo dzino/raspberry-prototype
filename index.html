@@ -3842,10 +3842,13 @@
         height: 100%;
         content: "";
         display: block;
-        opacity: 0.8;
+        opacity: 0.3;
         z-index: 3;
         position: absolute;
         background: #1b223f;
+        background-position: center top;
+        background-size: cover;
+        background-image: url("./345234.jpg");
       }
       .jss14 {
         position: unset;
@@ -4079,6 +4082,9 @@
       src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d40.34867345036793&amp;2d-74.56246087904249&amp;2m2&amp;1d41.16141476093415&amp;2d-73.4088925672711&amp;2u12&amp;4sru-RU&amp;5e0&amp;6sm%40574000000&amp;7b0&amp;8e0&amp;12e2&amp;callback=_xdc_._fpvdjk&amp;key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI&amp;token=40359"
     ></script>
     <style type="text/css">
+      body {
+        margin: 0px;
+      }
       @-webkit-keyframes _gm8456 {
         0% {
           -webkit-transform: translate3d(0px, -500px, 0);
@@ -4115,7 +4121,7 @@
     ></script>
   </head>
   <body style="scroll-behavior: auto">
-    <div id="root">
+    <div id="root" style="background-color: #eeeeee">
       <div id="app" class="jss567">
         <!-- TODO Навигация -->
         <div>
@@ -4128,7 +4134,7 @@
                   MuiDrawer-paper
                   jss6
                   MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft
-                  MuiPaper-elevation0
+                  MuiPaper-elevati8on0
                 "
               >
                 <div class="jss8">
@@ -4138,55 +4144,182 @@
                     target="_blank"
                   >
                     <div class="jss11">
-                      <img
-                        src="data:image/png;base64,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"
-                        alt="logo"
-                        class="jss12"
-                      />
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="
+                          enable-background: new 0 0 512 512;
+                          margin-top: 5px;
+                          margin-bottom: -9px;
+                        "
+                        xml:space="preserve"
+                      >
+                        <path
+                          style="fill: #f2f2f2"
+                          d="M512,256c0,73.362-30.856,139.525-80.311,186.18c-32.12,30.323-72.077,52.423-116.506,62.945
+	C296.187,509.618,276.365,512,256,512c-20.376,0-40.187-2.382-59.183-6.875c-44.439-10.522-84.396-32.622-116.517-62.945
+	C30.856,395.515,0,329.362,0,256c0-63.3,22.977-121.25,61.053-165.93c28.776-33.782,66.184-59.988,108.805-75.212
+	C196.775,5.235,225.771,0,256,0s59.225,5.235,86.141,14.858c42.621,15.224,80.018,41.42,108.795,75.201
+	C489.023,134.74,512,192.69,512,256z"
+                        />
+                        <path
+                          style="fill: #222123"
+                          d="M468.741,319.969c0,20.135-4.618,37.794-13.479,51.994c-3.062,22.904-10.459,44.523-21.389,64.125
+	c-0.616,1.996-1.337,4.023-2.184,6.092C385.839,485.47,324.023,512,256,512c-68.033,0-129.849-26.53-175.7-69.82
+	c-0.836-2.069-1.567-4.096-2.184-6.092c-10.93-19.602-18.328-41.221-21.379-64.125c-8.861-14.2-13.49-31.859-13.49-51.994
+	c0-30.208,21.347-49.089,33.865-58.149c2.476-4.556,5.151-9.007,8.004-13.343c-0.063-0.502-0.094-1.003-0.115-1.515
+	c-0.878-24.398,8.673-47.877,26.885-66.09c5.12-5.11,10.668-9.206,16.823-12.403c-4.963-0.94-8.61-1.829-9.425-2.038
+	c-5.183-1.296-9.226-5.224-10.731-10.219c-7.492-3.887-12.466-8.359-13.385-9.206c-2.487-2.32-4.075-5.381-4.587-8.631
+	c-6.907-4.117-10.522-7.68-11.515-8.725c-3.135-3.312-4.566-7.826-3.992-12.257c-3.615-3.26-5.831-5.893-6.343-6.52
+	c-3.072-3.772-4.096-8.756-2.853-13.385c-2.811-3.657-4.336-6.468-4.671-7.105c-0.052-0.104-0.104-0.209-0.157-0.313
+	c-2.111-4.305-2.038-9.362,0.188-13.594c-2.581-3.814-3.929-6.771-4.232-7.492c-2.017-4.639-1.557-9.989,1.223-14.211
+	c0.387-0.596,0.815-1.149,1.264-1.672c-3.626-4.995-3.95-11.891-0.272-17.324c2.863-4.221,7.816-6.552,12.915-6.552h6.468
+	l0.021-0.042c2.581-5.078,7.784-8.307,13.479-8.307c3.856,0,7.983,0.23,11.985,0.575c2.8-3.218,6.907-5.162,11.327-5.162
+	c1.63,0,3.375,0.125,5.172,0.324c2.863-3.657,7.44-5.757,12.184-5.757c0.909,0,1.829,0.073,2.738,0.23
+	c4.827,0.846,9.028,1.87,12.675,2.988c0.606-0.522,1.264-1.003,1.954-1.421c2.403-1.463,5.11-2.205,7.826-2.205
+	c2.351,0,4.712,0.554,6.865,1.661c1.797,0.92,3.469,1.839,5.026,2.748c0.387,0.219,0.763,0.449,1.139,0.669
+	c1.933-0.867,4.033-1.327,6.165-1.327c1.766,0,3.553,0.313,5.266,0.961c2.957,1.108,6.092,2.988,9.112,5.151
+	c1.808-0.731,3.72-1.097,5.642-1.097c1.975,0,3.96,0.387,5.82,1.17c3.615,1.526,7.252,4.065,10.616,6.928
+	c0.773-0.115,1.546-0.178,2.33-0.178c3.375,0,6.729,1.139,9.456,3.354c1.066,0.867,23.845,19.613,30.595,47.156
+	c6.74-27.544,29.518-46.289,30.584-47.156c2.727-2.215,6.081-3.354,9.456-3.354c0.784,0,1.567,0.063,2.341,0.178
+	c3.354-2.863,6.99-5.402,10.606-6.928c1.87-0.784,3.845-1.17,5.831-1.17c1.912,0,3.824,0.366,5.632,1.097
+	c3.02-2.163,6.154-4.044,9.112-5.151c1.724-0.648,3.511-0.961,5.277-0.961c2.121,0,4.221,0.46,6.154,1.327
+	c0.376-0.23,0.752-0.449,1.149-0.669c1.557-0.909,3.229-1.829,5.015-2.748c2.163-1.108,4.514-1.661,6.865-1.661
+	c2.717,0,5.434,0.742,7.826,2.205c0.7,0.418,1.348,0.899,1.964,1.421c3.636-1.118,7.837-2.142,12.664-2.988
+	c0.919-0.157,1.829-0.23,2.738-0.23c4.744,0,9.32,2.1,12.184,5.757c1.797-0.199,3.542-0.324,5.172-0.324
+	c4.43,0,8.526,1.944,11.337,5.162c4.012-0.345,8.161-0.575,12.027-0.575c5.705,0,10.919,3.229,13.448,8.349c0.01,0,0.01,0,0.01,0
+	h6.541c5.099,0,10.041,2.351,12.884,6.593c3.647,5.444,3.312,12.319-0.324,17.283c0.46,0.522,0.888,1.076,1.275,1.672
+	c2.769,4.221,3.229,9.571,1.223,14.211c-0.313,0.721-1.661,3.678-4.232,7.492c2.215,4.232,2.299,9.279,0.178,13.584
+	c-0.052,0.115-0.105,0.219-0.157,0.324c-0.334,0.637-1.849,3.448-4.66,7.105c1.243,4.629,0.209,9.613-2.863,13.385
+	c-0.502,0.627-2.717,3.26-6.343,6.52c0.575,4.43-0.857,8.944-3.992,12.257c-0.982,1.045-4.608,4.608-11.504,8.725
+	c-0.522,3.25-2.111,6.311-4.598,8.631c-0.919,0.846-5.883,5.319-13.375,9.206c-1.515,4.995-5.548,8.923-10.742,10.219
+	c-0.815,0.209-4.462,1.097-9.425,2.038c6.154,3.197,11.713,7.293,16.823,12.403c18.213,18.213,27.763,41.691,26.896,66.09
+	c-0.021,0.512-0.063,1.014-0.115,1.515c2.842,4.336,5.517,8.788,7.993,13.343C447.394,270.879,468.741,289.761,468.741,319.969z"
+                        />
+                        <path
+                          style="fill: #81c756"
+                          d="M120.008,64.679c0,0,61.914,18.788,103.797,56.993c7.48-4.035,20.649-13.958,18.844-33.215
+	c-2.503-26.697-26.697-46.304-26.697-46.304v9.594c0,0-10.846-14.183-18.772-17.52l-2.086,9.177c0,0-11.263-11.68-17.938-14.183
+	c0,0,2.086,4.588,0,10.429c0,0-4.588-6.675-19.189-14.183v10.011c0,0-5.84-6.257-25.028-9.594c0,0,4.588,3.754,7.092,10.846
+	c0,0-15.851-5.423-24.612-5.423l7.718,7.718c0,0-17.729-3.128-31.077-3.128l6.257,8.342H71.619c0,0,11.263,11.263,11.263,18.772
+	H70.785c0,0,5.423,12.515,17.938,18.355c0,0-4.171,2.086-14.183,2.086c0,0,5.423,10.429,16.686,16.686l-10.846,1.252
+	c0,0,9.177,11.263,22.526,15.434l-12.932,2.503c0,0,7.509,7.926,25.445,13.765l-10.011,2.92c0,0,12.097,11.263,26.28,11.263
+	l-8.76,4.588c0,0,16.686,4.171,28.783,4.171l-7.509,7.509c0,0,58.173,8.047,68.983-34.449
+	C203.874,118.139,179.522,95.452,120.008,64.679z"
+                        />
+                        <g>
+                          <path
+                            style="fill: #cb1948"
+                            d="M255.997,230.703c27.949,0,52.977-14.183,55.898-27.532c2.921-13.349-15.434-37.96-55.898-37.96
+		s-58.817,24.612-55.898,37.96C203.019,216.521,228.048,230.703,255.997,230.703z"
+                          />
+                          <path
+                            style="fill: #cb1948"
+                            d="M315.183,505.125C296.187,509.618,276.365,512,256,512c-20.376,0-40.187-2.382-59.183-6.875
+		c-0.293-1.881-0.251-3.657,0.125-5.277c3.082-13.343,29.529-19.968,59.058-19.968s55.965,6.625,59.058,19.968
+		C315.434,501.457,315.476,503.244,315.183,505.125z"
+                          />
+                          <path
+                            style="fill: #cb1948"
+                            d="M162.297,409.506c-19.489-22.183-43.204-36.546-57.858-27.779
+		c-14.655,8.769-25.12,43.776,3.096,75.892s64.28,26.243,74.862,12.84C192.978,457.055,181.786,431.689,162.297,409.506z"
+                          />
+                        </g>
+                        <path
+                          style="fill: #cb1948"
+                          d="M182.007,175.247c4.35,0.292,6.66,5.297,4.062,8.797c-7.323,9.862-17.874,22.296-31.855,34.562
+	c-17.252,15.131-34.376,25.974-45.98,32.528c-3.636,2.054-8.075-0.539-8.225-4.712c-0.827-23.059,9.416-41.843,22.502-54.929
+	C136.335,177.667,153.949,173.369,182.007,175.247z"
+                        />
+                        <g>
+                          <path
+                            style="fill: #cb1948"
+                            d="M91.225,270.332c-17.52,11.68-32.954,27.114-32.954,49.64s6.466,41.506,19.605,54.646
+		c13.14,13.14,25.318-39.64,25.863-52.144C104.554,303.805,109.787,261.78,91.225,270.332z"
+                          />
+                          <ellipse
+                            style="fill: #cb1948"
+                            cx="256"
+                            cy="404.793"
+                            rx="63.812"
+                            ry="56.728"
+                          />
+
+                          <ellipse
+                            transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 105.1524 636.8993)"
+                            style="fill: #cb1948"
+                            cx="184.482"
+                            cy="296.672"
+                            rx="55.964"
+                            ry="64.919"
+                          />
+                        </g>
+                        <path
+                          style="fill: #81c756"
+                          d="M391.986,64.679c0,0-61.914,18.788-103.797,56.993c-7.48-4.035-20.649-13.958-18.844-33.215
+	c2.503-26.697,26.697-46.304,26.697-46.304v9.594c0,0,10.846-14.183,18.772-17.52l2.086,9.177c0,0,11.263-11.68,17.938-14.183
+	c0,0-2.086,4.588,0,10.429c0,0,4.588-6.675,19.189-14.183v10.011c0,0,5.84-6.257,25.028-9.594c0,0-4.588,3.754-7.092,10.846
+	c0,0,15.851-5.423,24.612-5.423l-7.718,7.718c0,0,17.729-3.128,31.077-3.128l-6.257,8.342h26.697c0,0-11.263,11.263-11.263,18.772
+	h12.097c0,0-5.423,12.515-17.938,18.355c0,0,4.171,2.086,14.183,2.086c0,0-5.423,10.429-16.686,16.686l10.846,1.252
+	c0,0-9.177,11.263-22.526,15.434l12.932,2.503c0,0-7.509,7.926-25.446,13.765l10.011,2.92c0,0-12.097,11.263-26.28,11.263
+	l8.76,4.588c0,0-16.686,4.171-28.783,4.171l7.509,7.509c0,0-58.173,8.047-68.983-34.449
+	C308.12,118.139,332.472,95.452,391.986,64.679z"
+                        />
+                        <g>
+                          <path
+                            style="fill: #cb1948"
+                            d="M255.997,230.703c-27.949,0-52.977-14.183-55.898-27.532c-2.92-13.349,15.434-37.96,55.898-37.96
+		s58.817,24.612,55.898,37.96C308.974,216.521,283.946,230.703,255.997,230.703z"
+                          />
+                          <path
+                            style="fill: #cb1948"
+                            d="M349.697,409.506c19.489-22.183,43.204-36.546,57.858-27.779
+		c14.655,8.769,25.12,43.776-3.096,75.892s-64.28,26.243-74.862,12.84C319.016,457.055,330.208,431.689,349.697,409.506z"
+                          />
+                        </g>
+                        <path
+                          style="fill: #cb1948"
+                          d="M329.987,175.247c-4.35,0.292-6.66,5.297-4.061,8.797c7.323,9.862,17.874,22.296,31.855,34.562
+	c17.252,15.131,34.376,25.974,45.98,32.528c3.636,2.054,8.075-0.539,8.225-4.712c0.827-23.059-9.417-41.843-22.502-54.929
+	C375.659,177.667,358.045,173.369,329.987,175.247z"
+                        />
+                        <g>
+                          <path
+                            style="fill: #cb1948"
+                            d="M420.769,270.332c17.52,11.68,32.954,27.114,32.954,49.64s-6.466,41.506-19.605,54.646
+		c-13.14,13.14-25.318-39.64-25.863-52.144C407.44,303.805,402.206,261.78,420.769,270.332z"
+                          />
+
+                          <ellipse
+                            transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 768.8735 274.8859)"
+                            style="fill: #cb1948"
+                            cx="327.506"
+                            cy="296.682"
+                            rx="55.964"
+                            ry="64.919"
+                          />
+                        </g>
+                      </svg>
                     </div>
                     {{name}}
                   </a>
                 </div>
                 <div class="jss27">
                   <ul class="MuiList-root jss14 MuiList-padding">
-                    <a
-                      class="jss15 active"
-                      href="#/admin/dashboard"
-                      aria-current="page"
-                      ><div
-                        class="
-                          MuiButtonBase-root
-                          MuiListItem-root
-                          jss16
-                          jss23
-                          MuiListItem-gutters MuiListItem-button
-                        "
-                        tabindex="0"
-                        role="button"
-                        aria-disabled="false"
-                      >
-                        <svg
-                          class="MuiSvgIcon-root jss17 jss21"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
-                          ></path>
-                        </svg>
-                        <div class="MuiListItemText-root jss19 jss21">
-                          Dashboard
-                        </div>
-                        <span class="MuiTouchRipple-root"></span></div></a
-                    ><a class="jss15" href="#/admin/user"
-                      ><div
+                    <a class="jss15" v-for="page in pages" :key="page.id">
+                      <div
                         class="
                           MuiButtonBase-root
                           MuiListItem-root
                           jss16
                           MuiListItem-gutters MuiListItem-button
                         "
+                        v-bind:class="page.id === `0` ? 'jss23' : ''"
                         tabindex="0"
                         role="button"
                         aria-disabled="false"
@@ -4194,180 +4327,22 @@
                         <svg
                           class="MuiSvgIcon-root jss17"
                           focusable="false"
-                          viewBox="0 0 24 24"
+                          style="height: 24px; width: 24px"
                           aria-hidden="true"
-                        >
-                          <path
-                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-                          ></path>
-                        </svg>
+                          v-html="page.icon"
+                        />
                         <div class="MuiListItemText-root jss19">
-                          User Profile
+                          {{page.name}}
                         </div>
-                        <span class="MuiTouchRipple-root"></span></div></a
-                    ><a class="jss15" href="#/admin/table"
-                      ><div
-                        class="
-                          MuiButtonBase-root
-                          MuiListItem-root
-                          jss16
-                          MuiListItem-gutters MuiListItem-button
-                        "
-                        tabindex="0"
-                        role="button"
-                        aria-disabled="false"
-                      >
-                        <span
-                          class="material-icons MuiIcon-root jss17"
-                          aria-hidden="true"
-                          >content_paste</span
-                        >
-                        <div class="MuiListItemText-root jss19">Table List</div>
-                        <span class="MuiTouchRipple-root"></span></div></a
-                    ><a class="jss15" href="#/admin/typography"
-                      ><div
-                        class="
-                          MuiButtonBase-root
-                          MuiListItem-root
-                          jss16
-                          MuiListItem-gutters MuiListItem-button
-                        "
-                        tabindex="0"
-                        role="button"
-                        aria-disabled="false"
-                      >
-                        <svg
-                          class="MuiSvgIcon-root jss17"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"
-                          ></path>
-                        </svg>
-                        <div class="MuiListItemText-root jss19">Typography</div>
-                        <span class="MuiTouchRipple-root"></span></div></a
-                    ><a class="jss15" href="#/admin/icons"
-                      ><div
-                        class="
-                          MuiButtonBase-root
-                          MuiListItem-root
-                          jss16
-                          MuiListItem-gutters MuiListItem-button
-                        "
-                        tabindex="0"
-                        role="button"
-                        aria-disabled="false"
-                      >
-                        <svg
-                          class="MuiSvgIcon-root jss17"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <circle cx="7.2" cy="14.4" r="3.2"></circle>
-                          <circle cx="14.8" cy="18" r="2"></circle>
-                          <circle cx="15.2" cy="8.8" r="4.8"></circle>
-                        </svg>
-                        <div class="MuiListItemText-root jss19">Icons</div>
-                        <span class="MuiTouchRipple-root"
-                          ><span
-                            class="
-                              MuiTouchRipple-ripple MuiTouchRipple-rippleVisible
-                            "
-                            style="
-                              width: 284.007px;
-                              height: 284.007px;
-                              top: -96.0035px;
-                              left: -9.00352px;
-                            "
-                            ><span
-                              class="
-                                MuiTouchRipple-child MuiTouchRipple-childLeaving
-                              "
-                            ></span></span
-                        ></span></div></a
-                    ><a class="jss15" href="#/admin/maps"
-                      ><div
-                        class="
-                          MuiButtonBase-root
-                          MuiListItem-root
-                          jss16
-                          MuiListItem-gutters MuiListItem-button
-                        "
-                        tabindex="0"
-                        role="button"
-                        aria-disabled="false"
-                      >
-                        <svg
-                          class="MuiSvgIcon-root jss17"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                          ></path>
-                        </svg>
-                        <div class="MuiListItemText-root jss19">Maps</div>
-                        <span class="MuiTouchRipple-root"></span></div></a
-                    ><a class="jss15" href="#/admin/notifications"
-                      ><div
-                        class="
-                          MuiButtonBase-root
-                          MuiListItem-root
-                          jss16
-                          MuiListItem-gutters MuiListItem-button
-                        "
-                        tabindex="0"
-                        role="button"
-                        aria-disabled="false"
-                      >
-                        <svg
-                          class="MuiSvgIcon-root jss17"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
-                          ></path>
-                        </svg>
-                        <div class="MuiListItemText-root jss19">
-                          Notifications
-                        </div>
-                        <span class="MuiTouchRipple-root"></span></div></a
-                    ><a class="jss15" href="#/rtl/rtl-page"
-                      ><div
-                        class="
-                          MuiButtonBase-root
-                          MuiListItem-root
-                          jss16
-                          MuiListItem-gutters MuiListItem-button
-                        "
-                        tabindex="0"
-                        role="button"
-                        aria-disabled="false"
-                      >
-                        <svg
-                          class="MuiSvgIcon-root jss17"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"
-                          ></path>
-                        </svg>
-                        <div class="MuiListItemText-root jss19">
-                          RTL Support
-                        </div>
-                        <span class="MuiTouchRipple-root"></span></div
-                    ></a>
+                        <span class="MuiTouchRipple-root"></span>
+                      </div>
+                    </a>
                   </ul>
                 </div>
-                <div class="jss13" style="background-color: #000"></div>
+                <div
+                  class="jss13"
+                  style="background-color: rgba(0, 0, 0, 1)"
+                ></div>
               </div>
             </div>
           </div>
@@ -4473,13 +4448,18 @@
                   >
                     <span class="MuiButton-label"
                       ><svg
-                        class="MuiSvgIcon-root"
+                        class="
+                          MuiSvgIcon-root MuiSvgIcon-fontSizeMedium
+                          iframe-demo-ltr-vubbuv
+                        "
                         focusable="false"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
+                        data-testid="MenuIcon"
                       >
                         <path
-                          d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
+                          style="color: #000"
+                          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                         ></path>
                       </svg>
                       <div class="jss36">
@@ -4487,37 +4467,6 @@
                       </div></span
                     ><span class="MuiTouchRipple-root"></span>
                   </button>
-                  <div class="jss585">
-                    <button
-                      class="
-                        MuiButtonBase-root
-                        MuiButton-root MuiButton-text
-                        jss54
-                        jss63
-                        jss70
-                        jss572
-                      "
-                      tabindex="0"
-                      type="button"
-                      aria-haspopup="true"
-                    >
-                      <span class="MuiButton-label"
-                        ><svg
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
-                          ></path></svg
-                        ><span class="jss584">5</span>
-                        <div class="jss36">
-                          <p class="jss574">Notification</p>
-                        </div></span
-                      ><span class="MuiTouchRipple-root"></span>
-                    </button>
-                  </div>
                 </div>
               </div>
               <div class="jss36">
@@ -4570,26 +4519,51 @@
                           class="jss621 jss623"
                         >
                           <svg
-                            class="MuiSvgIcon-root"
-                            focusable="false"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
+                            version="1.1"
+                            id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 408 408"
+                            style="enable-background: new 0 0 408 408"
+                            xml:space="preserve"
                           >
                             <path
-                              d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"
-                            ></path>
+                              style="fill: #fff"
+                              d="M332,121.921H184.8l-29.28-34.8c-0.985-1.184-2.461-1.848-4-1.8H32.76C14.628,85.453,0,100.189,0,118.321v214.04
+                              c0.022,18.194,14.766,32.938,32.96,32.96H332c18.194-0.022,32.938-14.766,32.96-32.96v-177.48
+                              C364.938,136.687,350.194,121.943,332,121.921z"
+                            />
+                            <path
+                              style="fill: #fff"
+                              d="M375.24,79.281H228l-29.28-34.8c-0.985-1.184-2.461-1.848-4-1.8H76c-16.452,0.027-30.364,12.181-32.6,28.48h108.28
+                              c5.678-0.014,11.069,2.492,14.72,6.84l25,29.72H332c26.005,0.044,47.076,21.115,47.12,47.12v167.52
+                              c16.488-2.057,28.867-16.064,28.88-32.68v-177.48C407.957,94.1,393.34,79.413,375.24,79.281z"
+                            />
                           </svg>
                         </div>
                         <!-- Иконка: Файл -->
                         <div v-else class="jss621 jss622">
-                          <span
-                            class="material-icons MuiIcon-root"
-                            aria-hidden="true"
-                            >content_copy</span
+                          <svg
+                            enable-background="new 0 0 512 512"
+                            height="512"
+                            viewBox="0 0 512 512"
+                            width="512"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
+                            <path
+                              style="fill: #fff"
+                              d="m330 150c-19.299 0-35-15.701-35-35v-115h-179c-30.327 0-55 24.673-55 55v402c0 30.327 24.673 55 55 55h280c30.327 0 55-24.673 55-55v-307zm-187 210h72.72c8.284 0 15 6.716 15 15s-6.716 15-15 15h-72.72c-8.284 0-15-6.716-15-15s6.716-15 15-15zm-15-65c0-8.284 6.716-15 15-15h220c8.284 0 15 6.716 15 15s-6.716 15-15 15h-220c-8.284 0-15-6.716-15-15zm235-95c8.284 0 15 6.716 15 15s-6.716 15-15 15h-220c-8.284 0-15-6.716-15-15s6.716-15 15-15z"
+                            />
+                            <path
+                              style="fill: #fff"
+                              d="m325 115c0 2.757 2.243 5 5 5h114.314c-2.744-5.066-6.274-9.719-10.515-13.732l-96.423-91.222c-3.742-3.54-7.91-6.493-12.375-8.825v108.779z"
+                            />
+                          </svg>
                         </div>
-                        <p class="jss617">Revenue</p>
-                        <h3 class="jss619">{{file.name}}</h3>
+                        <p class="jss617" v-html="file.size" />
+                        <h3 class="jss619" v-html="file.name" />
                       </div>
                       <div class="jss628 jss631">
                         <div class="jss616">
@@ -4637,36 +4611,255 @@
         el: "#app",
         data: {
           name: "System manager",
+          icons: {
+            file: `
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 408 408"
+                style="enable-background: new 0 0 408 408"
+                xml:space="preserve"
+              >
+                <path
+                  style="fill: #fff"
+                  d="M332,121.921H184.8l-29.28-34.8c-0.985-1.184-2.461-1.848-4-1.8H32.76C14.628,85.453,0,100.189,0,118.321v214.04
+                  c0.022,18.194,14.766,32.938,32.96,32.96H332c18.194-0.022,32.938-14.766,32.96-32.96v-177.48
+                  C364.938,136.687,350.194,121.943,332,121.921z"
+                />
+                <path
+                  style="fill: #fff"
+                  d="M375.24,79.281H228l-29.28-34.8c-0.985-1.184-2.461-1.848-4-1.8H76c-16.452,0.027-30.364,12.181-32.6,28.48h108.28
+                  c5.678-0.014,11.069,2.492,14.72,6.84l25,29.72H332c26.005,0.044,47.076,21.115,47.12,47.12v167.52
+                  c16.488-2.057,28.867-16.064,28.88-32.68v-177.48C407.957,94.1,393.34,79.413,375.24,79.281z"
+                />
+              </svg>
+            `,
+            flash: `
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 469.333 469.333" style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
+                <g>
+                  <path d="M466.208,131.125l-128-128c-4.167-4.167-10.917-4.167-15.083,0l-88.458,88.458l-3.125-3.125
+                    c-4.167-4.167-10.917-4.167-15.083,0L33.292,271.625C11.833,293.094,0,321.635,0,352c0,64.698,52.646,117.333,117.333,117.333
+                    c29.917,0,59.229-12.135,80.375-33.292l183.167-183.167c4.167-4.167,4.167-10.917,0-15.083l-3.125-3.125l88.458-88.458
+                    C470.375,142.042,470.375,135.292,466.208,131.125z M263.771,296.365l-15.083,15.083c-2.083,2.083-4.813,3.125-7.542,3.125
+                    c-2.729,0-5.458-1.042-7.542-3.115l-0.005-0.005l-5.766,5.766c-6.125,6.125-14.229,9.396-22.542,9.396
+                    c-3.417,0-6.854-0.552-10.208-1.677l-26.482-8.827l-20.297,20.293c1.79,7.056,0.285,14.798-5.221,20.305
+                    c-4.167,4.156-9.625,6.24-15.083,6.24c-5.458,0-10.917-2.083-15.083-6.24c-8.313-8.313-8.313-21.854,0-30.167
+                    c5.522-5.508,13.253-7.012,20.305-5.22l5.195-5.195l-8.833-26.501c-3.854-11.573-0.896-24.125,7.75-32.76l8.07-8.07
+                    c-1.79-7.056-0.286-14.797,5.221-20.305c8.333-8.313,21.833-8.313,30.167,0c8.313,8.313,8.313,21.854,0,30.167
+                    c-4.167,4.156-9.625,6.24-15.083,6.24c-1.775,0-3.49-0.576-5.22-1.016l-8.072,8.078c-2.896,2.885-3.875,7.063-2.583,10.906
+                    l5.461,16.387l63.211-63.204l-0.005-0.005c-2.604-2.615-3.688-6.396-2.833-10c0.833-3.604,3.5-6.5,7-7.677l22.646-7.542
+                    c3.854-1.26,8.083-0.26,10.917,2.583c2.854,2.854,3.854,7.083,2.583,10.917l-7.542,22.625c-1.167,3.5-4.083,6.156-7.667,7.01
+                    c-0.813,0.188-1.646,0.281-2.458,0.281c-2.792,0-5.521-1.094-7.542-3.115l-0.005-0.005l-48.137,48.132l16.371,5.457
+                    c3.833,1.271,8.021,0.313,10.917-2.573l5.755-5.755l-0.005-0.005c-2-2-3.125-4.719-3.125-7.552s1.125-5.552,3.125-7.552
+                    l15.104-15.083c4.167-4.146,10.917-4.156,15.083,0.01l15.083,15.083C267.937,285.448,267.937,292.198,263.771,296.365z
+                    M362.667,219.583L249.75,106.667l80.917-80.917l112.917,112.917L362.667,219.583z"/>
+                  <path d="M290.979,99.281c-4.021,4.188-3.958,10.823,0.146,14.927l10.667,10.667c2.083,2.083,4.813,3.125,7.542,3.125
+                    c2.729,0,5.458-1.042,7.542-3.125l32-32c4.167-4.167,4.167-10.917,0-15.083l-10.667-10.667c-1.021-1.021-2.25-1.854-3.583-2.385
+                    C327.125,61.708,327.125,61.625,290.979,99.281z"/>
+                  <path d="M344.479,167.562l10.667,10.667c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l32-32
+                    c4.167-4.167,4.167-10.917,0-15.083l-10.667-10.667c-1.021-1.021-2.25-1.854-3.583-2.385c-7.479-3.031-7.5-3.115-43.646,34.542
+                    C340.313,156.823,340.375,163.458,344.479,167.562z"/>
+                  <polygon points="128,341.625 128,341.635 135.542,349.167 128.031,341.646 			"/>
+                  <polygon points="173.25,251.115 165.708,243.562 165.708,243.573 165.729,243.604 			"/>
+                </g>
+              </svg>
+            `,
+            alias: `
+              <svg viewBox="0 0 524.931 524.93">
+                <path style="fill: #fff" d="M226.434,249.503c0-6.995-2.705-13.403-7.846-18.556L61.8,74.165c-5.128-5.141-11.554-7.852-18.568-7.852
+                  c-7.026,0-13.452,2.717-18.556,7.846l-16.83,16.83c-5.129,5.135-7.84,11.549-7.84,18.538c0,7.026,2.717,13.452,7.846,18.556
+                  l121.415,121.42L7.84,370.936C2.711,376.071,0,382.491,0,389.486c0,7.02,2.717,13.439,7.846,18.544l16.775,16.774
+                  c5.116,5.165,11.555,7.895,18.611,7.895c7.044,0,13.47-2.723,18.556-7.846l156.813-156.8
+                  C223.729,262.913,226.434,256.504,226.434,249.503z"/>
+                <path d="M498.866,384.951h-323.02c-7.203,0-13.611,2.583-18.581,7.528c-4.896,4.92-7.484,11.327-7.484,18.531v21.536
+                  c0,7.252,2.607,13.672,7.491,18.543c4.915,4.927,11.34,7.528,18.574,7.528h323.02c7.239,0,13.659-2.607,18.531-7.497
+                  c4.927-4.908,7.533-11.334,7.533-18.58v-21.537c0-7.209-2.589-13.616-7.54-18.592
+                  C512.477,387.534,506.069,384.951,498.866,384.951z"/>
+              </svg>
+
+            `,
+            service: `
+              <svg viewBox="0 0 469.333 469.333" style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
+                <g>
+                  <g>
+                    <g>
+                      <path d="M170.667,0h-128C19.135,0,0,19.135,0,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128
+                        c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,19.135,194.198,0,170.667,0z"/>
+                      <path d="M426.667,0h-128C275.135,0,256,19.135,256,42.667v128c0,23.531,19.135,42.667,42.667,42.667h128
+                        c23.531,0,42.667-19.135,42.667-42.667v-128C469.333,19.135,450.198,0,426.667,0z"/>
+                      <path d="M170.667,256h-128C19.135,256,0,275.135,0,298.667v128c0,23.531,19.135,42.667,42.667,42.667h128
+                        c23.531,0,42.667-19.135,42.667-42.667v-128C213.333,275.135,194.198,256,170.667,256z"/>
+                      <path d="M416,341.333h-32v-32c0-5.896-4.771-10.667-10.667-10.667H352c-5.896,0-10.667,4.771-10.667,10.667v32h-32
+                        c-5.896,0-10.667,4.771-10.667,10.667v21.333c0,5.896,4.771,10.667,10.667,10.667h32v32c0,5.896,4.771,10.667,10.667,10.667
+                        h21.333c5.896,0,10.667-4.771,10.667-10.667v-32h32c5.896,0,10.667-4.771,10.667-10.667V352
+                        C426.667,346.104,421.896,341.333,416,341.333z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            `,
+            gpio: `
+              <svg viewBox="0 0 19.844 19.844">
+                <g>
+                  <g>
+                    <path style="fill:#fff;" d="M14.55,8.035V4.633C14.55,2.075,12.474,0,9.917,0C7.358,0,5.283,2.075,5.283,4.633v3.401H4.84
+                      v1.379h10.165V8.034H14.55V8.035z"/>
+                    <polygon style="fill:#fff;" points="6.395,15.414 6.825,15.414 6.825,19.844 8.301,19.844 8.301,15.414 8.764,15.414 
+                      8.764,10.094 6.395,10.094 		"/>
+                    <polygon style="fill:#fff;" points="10.871,15.414 11.302,15.414 11.302,19.844 12.778,19.844 12.778,15.414 13.239,15.414 
+                      13.239,10.094 10.871,10.094 		"/>
+                  </g>
+                </g>
+              </svg>
+
+            `,
+            settings: `
+              <svg viewBox="0 0 24 24"><path d="m22.683 9.394-1.88-.239c-.155-.477-.346-.937-.569-1.374l1.161-1.495c.47-.605.415-1.459-.122-1.979l-1.575-1.575c-.525-.542-1.379-.596-1.985-.127l-1.493 1.161c-.437-.223-.897-.414-1.375-.569l-.239-1.877c-.09-.753-.729-1.32-1.486-1.32h-2.24c-.757 0-1.396.567-1.486 1.317l-.239 1.88c-.478.155-.938.345-1.375.569l-1.494-1.161c-.604-.469-1.458-.415-1.979.122l-1.575 1.574c-.542.526-.597 1.38-.127 1.986l1.161 1.494c-.224.437-.414.897-.569 1.374l-1.877.239c-.753.09-1.32.729-1.32 1.486v2.24c0 .757.567 1.396 1.317 1.486l1.88.239c.155.477.346.937.569 1.374l-1.161 1.495c-.47.605-.415 1.459.122 1.979l1.575 1.575c.526.541 1.379.595 1.985.126l1.494-1.161c.437.224.897.415 1.374.569l.239 1.876c.09.755.729 1.322 1.486 1.322h2.24c.757 0 1.396-.567 1.486-1.317l.239-1.88c.477-.155.937-.346 1.374-.569l1.495 1.161c.605.47 1.459.415 1.979-.122l1.575-1.575c.542-.526.597-1.379.127-1.985l-1.161-1.494c.224-.437.415-.897.569-1.374l1.876-.239c.753-.09 1.32-.729 1.32-1.486v-2.24c.001-.757-.566-1.396-1.316-1.486zm-10.683 7.606c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"/></svg>
+            `,
+            system: `
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path d="M119.467,0h-102.4C7.641,0,0,7.641,0,17.067v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067v-102.4C136.533,7.641,128.892,0,119.467,0z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M290.133,0h-102.4c-9.426,0-17.067,7.641-17.067,17.067v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067v-102.4C307.2,7.641,299.559,0,290.133,0z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M460.8,0H358.4c-9.426,0-17.067,7.641-17.067,17.067v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067v-102.4C477.867,7.641,470.226,0,460.8,0z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M119.467,170.667h-102.4C7.641,170.667,0,178.308,0,187.733v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067v-102.4C136.533,178.308,128.892,170.667,119.467,170.667z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M290.133,170.667h-102.4c-9.426,0-17.067,7.641-17.067,17.067v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067v-102.4C307.2,178.308,299.559,170.667,290.133,170.667z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M460.8,170.667H358.4c-9.426,0-17.067,7.641-17.067,17.067v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067v-102.4C477.867,178.308,470.226,170.667,460.8,170.667z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M119.467,341.333h-102.4C7.641,341.333,0,348.974,0,358.4v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067V358.4C136.533,348.974,128.892,341.333,119.467,341.333z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M290.133,341.333h-102.4c-9.426,0-17.067,7.641-17.067,17.067v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067V358.4C307.2,348.974,299.559,341.333,290.133,341.333z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M460.8,341.333H358.4c-9.426,0-17.067,7.641-17.067,17.067v102.4c0,9.426,7.641,17.067,17.067,17.067h102.4
+                      c9.426,0,17.067-7.641,17.067-17.067V358.4C477.867,348.974,470.226,341.333,460.8,341.333z"/>
+                  </g>
+                </g>
+              </svg>
+            
+            `,
+          },
           pages: [],
           path: "/home/pi/",
           files: [
-            { id: "0", type: "folder", name: "Projects", date: "02.04.2021" },
+            {
+              id: "0",
+              type: "folder",
+              name: "Projects",
+              date: "02.04.2021",
+              size: "195 M",
+            },
             {
               id: "1",
               type: "folder",
               name: "Miscellaneous",
               date: "15.02.2021",
+              size: "76 M",
             },
-            { id: "2", type: "folder", name: "Raspberry", date: "06.04.2021" },
-            { id: "3", type: "file", name: "LEDs.py", date: "02.04.2021" },
-            { id: "4", type: "file", name: "Relay.py", date: "09.03.2021" },
-            { id: "5", type: "file", name: "Readme.md", date: "03.02.2021" },
+            {
+              id: "2",
+              type: "folder",
+              name: "Raspberry",
+              date: "06.04.2021",
+              size: "39 M",
+            },
+            {
+              id: "3",
+              type: "file",
+              name: "LEDs.py",
+              date: "02.04.2021",
+              size: "2 K",
+            },
+            {
+              id: "4",
+              type: "file",
+              name: "Relay.py",
+              date: "09.03.2021",
+              size: "5 K",
+            },
+            {
+              id: "5",
+              type: "file",
+              name: "Readme.md",
+              date: "03.02.2021",
+              size: "6 K",
+            },
             {
               id: "6",
               type: "file",
               name: "Temperature_humidity.py",
               date: "01.04.2021",
+              size: "3 K",
             },
-            { id: "7", type: "file", name: "Data.csv", date: "02.04.2021" },
+            {
+              id: "7",
+              type: "file",
+              name: "Data.csv",
+              date: "02.04.2021",
+              size: "148 K",
+            },
             {
               id: "7",
               type: "file",
               name: "Settings.json",
               date: "21.03.2021",
+              size: "2 K",
             },
           ],
         },
-        mounted() {},
+        mounted() {
+          this.pages = [
+            { id: "0", name: "Files", icon: this.icons.file },
+            { id: "1", name: "Devices", icon: this.icons.flash },
+            { id: "2", name: "Alias", icon: this.icons.alias },
+            { id: "3", name: "Services", icon: this.icons.service },
+            { id: "4", name: "GPIO", icon: this.icons.gpio },
+            { id: "5", name: "Settings", icon: this.icons.settings },
+            { id: "6", name: "System", icon: this.icons.system },
+          ]
+        },
         methods: {},
         watch: {},
       })
